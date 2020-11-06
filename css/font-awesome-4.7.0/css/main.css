@@ -94,6 +94,41 @@ aside {
   
   
   float: left;
+   
+}
+
+.main__breadcrumb {
+  background-color: rgb(233, 236, 239);
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+}
+
+.card__top {
+border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card__bottom {
+  border-radius:0 0 0.25rem 0.25rem ;
+}
+
+.main__cards {
+  display: inline-block;
   
-  
+}
+
+.main__card--blue {
+  background-color: rgb(0, 123, 255);
+  transition:all 0.3s ease-in-out;
+}
+.main__card--yellow {
+  background-color: rgb(255, 193, 7);
+  transition:all 0.3s ease-in-out;
+}
+.main__card--green {
+  background-color: rgb(40, 167, 69);
+  transition:all 0.3s ease-in-out;
+}
+.main__card--red {
+  background-color: rgb(220, 53, 69);
+  transition:all 0.3s ease-in-out;
 }
