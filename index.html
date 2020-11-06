@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/main.css">
 </head>
+
 <body>
-    
+
+    <header class="header--dark">
+        <h3 class="header__title">
+            <a href="#">Admin Page</a>
+            <a class="menu__btn" href="#"> <i class="fa fa-bars"></i></a>
+        </h3>
+
+        <div class="header__search">
+            <form>
+                <a><input class="search__input" type="text" placeholder="Search for..." name="search"></a>
+                <a><button id="icon--search" type="submit"><i class="fa fa-search"></i></button></a>
+                <a><button id="icon--user" type="submit"><i class="fa fa-user"></i></button></a>
+           
+            </form>
+        </div>
+
+    </header>
+
+
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li>core</li>
+                    <li> <i class="fa fa-tachometer"></i> Dashboard</li>
+                    <li>interface</li>
+                    <li><i class="fa fa-windows"></i> Layouts</li>
+                    <li><i class="fa fa-bookmark"></i> Pages</li>
+                    <li>Addons</li>
+                    <li><i class="fa fa-area-chart"></i> Charts</li>
+                    <li><i class="fa fa-table"></i> Tables</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content"></section>
+    </main>
+   
 </body>
+
 </html>
