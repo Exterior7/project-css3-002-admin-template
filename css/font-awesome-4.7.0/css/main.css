@@ -186,16 +186,17 @@ aside {
 /* Kártyák */
 
 .flex-container {
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
-  
+  width: 100%;
+   
 }
 
 .flex-container > div {
-  width: 15rem;
+  width: 23%;
   text-align: left;
-  
-  margin: 1rem;
+  margin:1rem;
+  min-width: 15rem;
 }
 
 
@@ -204,50 +205,72 @@ aside {
   display: inline-block;
   border-radius: 0.25rem;
   
-   
+  
 }
 /* Kártyák szövegigazítás */
 .main__cards h2, .main__cards p  {
 margin-left: 1rem;
+font-weight: normal;
 }
-
-/* .card__bottom p {
-  background-color: black;
- 
-} */
-
 
 
 
 .main__card--blue {
   color: rgb(255,255,255);
   background-color: rgb(0, 123, 255);
- 
-  
 }
+.main__card--blue p {
+  background-color:  rgb(0, 113, 255);
+  padding:0.6rem 1rem;
+  margin:0;
+  }
+
+
+
 .main__card--yellow {
   color: rgb(255,255,255);
   background-color: rgb(255, 193, 7);
- 
 }
+
+.main__card--yellow p {
+  background-color: rgb(245, 183, 7);
+  padding:0.6rem 1rem;
+  margin:0;
+  }
+
+
+
 .main__card--green {
   color: rgb(255,255,255);
-  background-color: rgb(40, 167, 69);
+  background-color: rgb(40, 177, 69);
  
 }
+.main__card--green p {
+background-color: rgb(30, 167, 69);
+padding:0.6rem 1rem;
+margin:0;
+}
+
+
 .main__card--red {
   color: rgb(255,255,255);
   background-color: rgb(220, 53, 69);
  
 }
+.main__card--red p {
+background-color: rgb(210, 53, 69);
+padding:0.6rem 1rem;
+margin:0;
+}
 
 
 .fa-angle-right {
   float: right;
-  margin-right: 1rem;
+  margin-right: 0.2rem;
 }
 
 
-/* Ami még hiányzik Áttünés, media kártyák */
+
+/* Ami még hiányzik: Áttünés, media*/
 
 
