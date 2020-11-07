@@ -204,9 +204,10 @@ aside {
 .main__cards {
   display: inline-block;
   border-radius: 0.25rem;
-  
-  
+   
 }
+
+
 /* Kártyák szövegigazítás */
 .main__cards h2, .main__cards p  {
 margin-left: 1rem;
@@ -223,6 +224,7 @@ font-weight: normal;
   background-color:  rgb(0, 113, 255);
   padding:0.6rem 1rem;
   margin:0;
+  border-radius: 0.25rem;
   }
 
 
@@ -236,6 +238,7 @@ font-weight: normal;
   background-color: rgb(245, 183, 7);
   padding:0.6rem 1rem;
   margin:0;
+  border-radius: 0.25rem;
   }
 
 
@@ -249,6 +252,7 @@ font-weight: normal;
 background-color: rgb(30, 167, 69);
 padding:0.6rem 1rem;
 margin:0;
+border-radius: 0.25rem;
 }
 
 
@@ -261,6 +265,7 @@ margin:0;
 background-color: rgb(210, 53, 69);
 padding:0.6rem 1rem;
 margin:0;
+border-radius: 0.25rem;
 }
 
 
