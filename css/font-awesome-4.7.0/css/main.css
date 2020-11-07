@@ -1,7 +1,8 @@
-body {
-  margin: 0;
-  }
 
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
   h3 {
     margin: 1rem 0.5rem;
     text-align: center;
@@ -9,14 +10,15 @@ body {
     
   } 
 
-  
+/* Header */
+
+
 .header--dark {
     background-color: rgb(51, 57, 64);
     color: rgb(236, 236, 236);
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0.375rem 0.75rem 0.375rem 0.75rem;
-    
-    
+      
 }
 
   
@@ -29,17 +31,38 @@ body {
     font-size: 1.25rem;
     
   }
-  
+  /* Header ikonok*/
     
    .header__search {
     float: right;
     display: inline;
     position: relative;
-    margin-top: -2.5rem;
-    
-  
+    margin-top: -3.0rem;
   }
-  
+
+
+    #icon--search {
+      margin-left:0;
+      background-color: rgb(0, 123,255);
+      color: white;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 0 4px 4px 0;
+   }
+
+   #icon--user {
+     margin:0 1rem 0;
+     background-color: transparent;
+     color: rgb(174, 174, 174);
+     padding: 0.6rem;
+     border: none;
+     
+   }
+
+
+
+
+  /* Header input mező */
   .header--dark input {
     padding: 0.375rem 0.75rem 0.375rem 0.75rem;
     font-size:1.25rem ;
@@ -48,68 +71,107 @@ body {
     
   }
 
- 
-#icon--search {
-  margin-left:0;
-  background-color: rgb(0, 123,255);
-  color: white;
-  padding: 0.6rem;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  
-}
-#icon--user {
-  margin:0 1rem 0;
-  background-color: transparent;
-  color: rgb(174, 174, 174);
-  padding: 0.6rem;
-  border: none;
-  
-}
-
+/* Header menü  */
  .menu__btn {
      margin-left: 4rem;
      
  }
 
+/* Header search  */
+
  .search__input {
+   box-sizing: border-box;
    border-radius: 4px 0 0 4px;
    padding: 0.375rem 0.75rem;
    line-height: 1.2rem;
-   transition: border 0.15s ease-out;
+   transition: border 0.15s;
+   outline: none;
  }
 
  .search__input:focus {
-  border-color:rgb(128, 189, 255);
+  box-sizing: border-box;
+  border: 2px solid rgb(128, 189, 255);
+  
 }
 
+
+/* Navigációs menü  */
+
+ul li {
+  list-style: none;
+  text-align: left;
+ 
+}
+/* Navigációs menü formázás  */
 .main__nav {
   background-color: rgb(33, 37, 41);
+  color: rgba(255, 255, 255, 0.26);
+ 
+  height: 100%;
+  width: 230px;
+  position: absolute;
+  z-index: 1;
+  top: 4.7rem;
+  
+} 
+/* Navigációs menü lista elemek  */
+.li__level1 {
+  padding: 0rem 0rem 0rem 0;
+  line-height: 5rem;
+  
+}
+
+
+.li__level2 {
+  padding: 0rem 0rem 0rem 0;
+  line-height: 2.5rem;
+  
+}
+
+li:nth-child(2) {
+  color: rgb(255, 255, 255);
+}
+
+
+/* Fő adatok */
+.content {
+
+  float: center;
+  margin-left: 15rem;
+  padding: 1rem 1.5rem;
+  
+}
+
+.main__content--text {
+  margin-left: 1rem;
 }
 
 
 aside {
   width: 30%;
-  padding: 0;
-  
-  
   float: left;
    
 }
+
+
+/* Tartalom breadcrumb  */
 
 .main__breadcrumb {
   background-color: rgb(233, 236, 239);
   border-radius: 0.25rem;
   padding: 1rem 1.5rem;
-}
+  margin-left: 1rem;
+  
+  }
 
-.card__top {
-border-radius: 0.25rem 0.25rem 0 0;
-}
+  .main__breadcrumb input {
+    background-color: transparent;
+    border: none;
+  }
 
-.card__bottom {
-  border-radius:0 0 0.25rem 0.25rem ;
-}
+
+
+/* Kártyák */
 
 .flex-container {
   display: flex;
@@ -124,15 +186,32 @@ border-radius: 0.25rem 0.25rem 0 0;
   margin: 1rem;
 }
 
+
+
 .main__cards {
   display: inline-block;
+  border-radius: 0.25rem;
   
+   
 }
+/* Kártyák szövegigazítás */
+.main__cards h2, .main__cards p  {
+margin-left: 1rem;
+}
+
+/* .card__bottom p {
+  background-color: black;
+ 
+} */
+
+
+
 
 .main__card--blue {
   color: rgb(255,255,255);
   background-color: rgb(0, 123, 255);
   transition:all 0.3s ease-in-out;
+  
 }
 .main__card--yellow {
   color: rgb(255,255,255);
@@ -149,3 +228,11 @@ border-radius: 0.25rem 0.25rem 0 0;
   background-color: rgb(220, 53, 69);
   transition:all 0.3s ease-in-out;
 }
+
+
+
+
+
+
+
+
