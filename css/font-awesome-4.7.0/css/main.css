@@ -7,7 +7,7 @@
     margin: 1rem 0.5rem;
     text-align: center;
     padding-bottom: 1.5rem;
-    
+    font-weight: normal;
   } 
 
 /* Header */
@@ -57,11 +57,12 @@
      padding: 0.6rem;
      border: none;
      padding-right: 0 !important;
+  }
 
-     
-   }
+
+
    #icon--angle {
-     margin:0.1rem 0 0 0.2rem;
+     margin:0rem 0 0 0.2rem;
      background-color: transparent;
      color: rgb(174, 174, 174);
      padding: 0.6rem;
@@ -98,6 +99,8 @@
    line-height: 1.2rem;
    transition: border 0.15s;
    outline: none;
+   font-weight: 100;
+   
  }
 
  .search__input:focus {
@@ -135,27 +138,53 @@ ul li {
 
 
 .li__level2 {
-  padding: 0rem 0rem 0rem 0;
+  padding: 0;
   line-height: 2.5rem;
+ 
   
 }
 
 li:nth-child(2) {
   color: rgb(255, 255, 255);
+ 
 }
+
+li:nth-child(3) {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}  
+
+li:nth-child(4) .fa-angle-right {
+  margin-left: 4rem;
+} 
+
+li:nth-child(5) .fa-angle-right {
+  margin-left: 4.9rem;
+} 
+
+li:nth-child(6) {
+  text-transform: uppercase !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+}  
+
 
 
 /* Fő adatok */
 .content {
 
   float: center;
-  margin-left: 15rem;
+  margin-left: 14rem;
   padding: 1rem 1.5rem;
   
 }
 
-.main__content--text {
-  margin-left: 1rem;
+.main__content--text h1 {
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: .9rem;
 }
 
 
@@ -172,7 +201,7 @@ aside {
   background-color: rgb(233, 236, 239);
   border-radius: 0.25rem;
   padding: 1rem 1.5rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   
   }
 
@@ -184,6 +213,13 @@ aside {
 
 
 /* Kártyák */
+/* .cards--transition:hover {
+  transition: .3s;
+  background-color: red;
+} */
+
+
+
 
 .flex-container {
   display: inline-flex;
@@ -195,8 +231,9 @@ aside {
 .flex-container > div {
   width: 23%;
   text-align: left;
-  margin:1rem;
-  min-width: 15rem;
+  margin:0.5rem;
+  min-width: 14rem;
+  /* max-width: 15rem; */
 }
 
 
@@ -204,14 +241,23 @@ aside {
 .main__cards {
   display: inline-block;
   border-radius: 0.25rem;
-   
-}
+ 
+   }
 
 
 /* Kártyák szövegigazítás */
-.main__cards h2, .main__cards p  {
+.main__cards h2  {
 margin-left: 1rem;
-font-weight: normal;
+font-weight: lighter;
+font-size: 1rem;
+padding: 1rem 0;
+}
+
+.main__cards p {
+  margin-left: 1rem;
+  font-size: .8rem;
+  font-weight: 100;
+  padding: 1rem 1.4rem !important;
 }
 
 
@@ -219,7 +265,11 @@ font-weight: normal;
 .main__card--blue {
   color: rgb(255,255,255);
   background-color: rgb(0, 123, 255);
-}
+  }
+
+  
+
+
 .main__card--blue p {
   background-color:  rgb(0, 113, 255);
   padding:0.6rem 1rem;
@@ -227,7 +277,14 @@ font-weight: normal;
   border-radius: 0.25rem;
   }
 
-
+  div:hover .main__card--blue {
+    transition: .3s;
+    background-color:rgb(0, 123, 255);;
+  }
+  div:hover .main__card--blue p {
+    transition: .3s;
+    background-color: rgb(0, 123, 255);
+  }
 
 .main__card--yellow {
   color: rgb(255,255,255);
@@ -239,9 +296,17 @@ font-weight: normal;
   padding:0.6rem 1rem;
   margin:0;
   border-radius: 0.25rem;
+  
   }
 
-
+  div:hover .main__card--yellow {
+    transition: .3s;
+    background-color:rgb(245, 183, 7);
+  }
+  div:hover .main__card--yellow p {
+    transition: .3s;
+    background-color: rgb(245, 183, 7);
+  }
 
 .main__card--green {
   color: rgb(255,255,255);
@@ -254,6 +319,17 @@ padding:0.6rem 1rem;
 margin:0;
 border-radius: 0.25rem;
 }
+
+div:hover .main__card--green {
+  transition: .3s;
+  background-color:rgb(30, 167, 69);
+}
+div:hover .main__card--green p {
+  transition: .3s;
+  background-color: rgb(30, 167, 69);
+}
+
+
 
 
 .main__card--red {
@@ -268,23 +344,26 @@ margin:0;
 border-radius: 0.25rem;
 }
 
+div:hover .main__card--red {
+  transition: .3s;
+  background-color:rgb(210, 53, 69);
+}
+div:hover .main__card--red p {
+  transition: .3s;
+  background-color: rgb(210, 53, 69);
+}
+
+
+
 
 .main__cards .fa-angle-right {
   float: right;
   margin-right: 0.2rem;
 }
 
-li:nth-child(4) .fa-angle-right {
-  margin-left: 4rem;
-} 
-
-li:nth-child(5) .fa-angle-right {
-  margin-left: 4.9rem;
-} 
 
 
 
-
-/* Ami még hiányzik: Áttünés, media*/
+/* Ami még hiányzik: , media */
 
 
